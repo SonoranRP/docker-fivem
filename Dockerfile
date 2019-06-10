@@ -6,7 +6,7 @@ RUN wget https://github.com/TomGrobbe/vMenu/files/2985224/CitizenFX.Core.Server.
 RUN unzip /tmp/CitizenFX.Core.Server.zip -d /srv/alpine/opt/cfx-server/citizen/clr2/lib/mono/4.5/
 
 VOLUME ["/srv/cache", "/srv/resources"]
-WORKDIR /srv/resources
+WORKDIR /srv
 
 EXPOSE 30120/tcp 30120/udp
 
